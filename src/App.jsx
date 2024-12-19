@@ -32,7 +32,7 @@ const App = () => {
 
     try {
       // Send request to backend
-      const response = await axios.post("http://34.232.63.72:8000/predict", { news_text: news });
+      const response = await axios.post("http://192.168.56.1:8000/predict", { news_text: news });
       setResult(response.data); // Store result from backend
       // Scroll to analysis result section
       if (analysisRef.current) {
